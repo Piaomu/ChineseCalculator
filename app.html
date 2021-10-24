@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="css/site.css">
 </head>
 
-    <!--Insert Menu-->
+    <!--Nav-->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-gray mb-5">
         <a class="navbar-brand" href="/index.html">sunset<span class="text-magenta">Hills</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +46,9 @@
             </ul>
         </div>
     </nav>
+    <!-- /Nav -->
 
+    <!-- Jumbotron -->
 <div class="jumbotron jumbotron-fluid header">
   <div class="container hero">
     <div>
@@ -55,24 +57,71 @@
     </div>
   </div>
 </div>
+<!-- /Jumbotron -->
 
     <!--Body-->
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg">
-                <h1>1：一  2：二  3：三  4 四 5：五 6： 六  7： 七  8：八  9：九 10：十 </h1>
+                <div class="card text-center">
+                    <h2>zero:零 one：一  two：二  three：三  four:四 five：五 six：六  seven：七  eight：八  nine：九 ten：十 </h2>
+                    <br>
+                    <h2>hundred:百 thousand:千</h2>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <form action="submit">
-                    <div class="form-group">
-                        <label>Number 1-10</label>
-                        <input type="number" class="num1" min="1" max="10">
-                    </div>
-                </form>
-            </div>
+    <form>
+    <div class="form-group row">
+        <label for="numOne" class="col-sm-2 col-form-label">Choose Number</label>
+        <div class="col-sm-1">
+        <input type="number" min="0" max="10" class="form-control" id="numOne" placeholder="0-10">
         </div>
+    </div>
+        <fieldset class="form-group row">
+        <legend class="col-form-label col-sm-2 float-sm-left pt-0">Choose an Operation</legend>
+        <div class="col-sm-10">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="MathRadios" id="Add" value="Add" checked>
+            <label class="form-check-label" for="AddRadio">
+            Plus （加）
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="MathRadios" id="Subtract" value="Subtract">
+            <label class="form-check-label" for="SubtractRadio">
+            Minus （减）
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="MathRadios" id="Multiply" value="Multiply">
+            <label class="form-check-label" for="MultiplyRadio">
+            Multiplied By （乘）
+            </label>
+        </div>
+                <div class="form-check">
+            <input class="form-check-input" type="radio" name="MathRadios" id="Divide" value="Divide">
+            <label class="form-check-label" for="DivideRadio">
+            Divided By （除）
+            </label>
+        </div>
+        </div>
+    </fieldset>
+    <div class="form-group row">
+        <label for="numTwo" class="col-sm-2 col-form-label" min="1" max="10">Choose Number</label>
+        <div class="col-sm-1">
+        <input type="number" class="form-control" id="numTwo" placeholder="0-10">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-sm-10">
+        <button type="button" id="submitBtn" class="btn btn-primary">Submit and Translate</button>
+        </div>
+    </div>
+    </form>
+    <div class="col">
+        <h3 id="output"></h3>
+    </div>
     </div>
     <!-- /Body -->
 
@@ -89,8 +138,9 @@
   </div>
       </div>
     </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Site JavaScript -->
+ <script src="/js/site.js"></script>
+    <!-- Dependencies -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -100,6 +150,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
 
 </body>
 
