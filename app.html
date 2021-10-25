@@ -22,7 +22,7 @@
 
     <!--Nav-->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-gray mb-5">
-        <a class="navbar-brand" href="/index.html">sunset<span class="text-magenta">Hills</span></a>
+        <a class="navbar-brand" href="/index.html">Chinese<span class="text-magenta">Calculator</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -107,15 +107,16 @@
         </div>
     </fieldset>
     <div class="form-group row">
-        <label for="numTwo" class="col-sm-2 col-form-label" min="1" max="10">Choose Number</label>
+        <label for="numTwo" class="col-sm-2 col-form-label">Choose Number</label>
         <div class="col-sm-1">
-        <input type="number" class="form-control" id="numTwo" placeholder="0-10">
+        <input type="number" class="form-control" id="numTwo" min="0" max="10" placeholder="0-10">
         </div>
     </div>
 
     <div class="form-group row">
         <div class="col-sm-10">
-        <button type="button" id="submitBtn" class="btn btn-primary">Submit and Translate</button>
+        <button type="button" id="submitBtn" class="btn btn-dark">Submit and Translate</button>
+        <button type="button" class="btn btn-secondary" id="clearBtn">Clear</button>
         </div>
     </div>
     </form>
@@ -126,18 +127,6 @@
     <!-- /Body -->
 
 
-
-    <footer class="footer bg-gray">
-      <div class="container bg-gray">
-          <div class="text-light text-center bg-gray">
-            <h4>Get in touch with <a class="text-cyan portfolio-link" href="https://kaseywahl.io/contact.html">Kasey</a>!</h4>
-    <p class="text-light">Copyright ©<script>
-        var CurrentYear = new Date().getFullYear()
-        document.write(CurrentYear)
-      </script> Kasey Wahl</p>
-  </div>
-      </div>
-    </footer>
     <!-- Site JavaScript -->
  <script src="/js/site.js"></script>
     <!-- Dependencies -->
